@@ -48,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				1470178D2BBD9F87009D270A /* ModelData.swift */,
+				147017892BBD9CF9009D270A /* landmarkData.json */,
 				1470178B2BBD9D20009D270A /* Landmark.swift */,
 			);
 			path = Model;
@@ -67,7 +68,6 @@
 		147017912BBDA059009D270A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				147017892BBD9CF9009D270A /* landmarkData.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";

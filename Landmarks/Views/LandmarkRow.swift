@@ -11,10 +11,12 @@ struct LandmarkRow: View{
     var landmark: Landmark
     
     var body: some View{
-        Text("Hello World")
+        Text(landmark.name)
     }
 }
 
 #Preview {
+   // LandmarkRow()
+
     LandmarkRow(landmark: landmarks[0])
 }
