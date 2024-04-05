@@ -2,21 +2,29 @@
 //  LandmarkRow.swift
 //  Landmarks
 //
-//  Created by STANISLAV STAJILA on 4/3/24.
+//  Created by STANISLAV STAJILA on 4/5/24.
 //
 
 import SwiftUI
 
-struct LandmarkRow: View{
+struct LandmarkRow: View {
     var landmark: Landmark
     
-    var body: some View{
-        Text(landmark.name)
+    var body: some View {
+        
+        HStack {
+            landmark.image.resizable().frame(width: 50, height: 50)
+            Text(landmark.name)
+            Spacer()
+        }
     }
 }
 
-#Preview {
-   // LandmarkRow()
 
-    LandmarkRow(landmark: landmarks[0])
+#Preview ("Turtle Rock") {
+    Group{
+        LandmarkRow(landmark: landmarks[0])
+        LandmarkRow(landmark: landmarks[1])
+    }
 }
+
