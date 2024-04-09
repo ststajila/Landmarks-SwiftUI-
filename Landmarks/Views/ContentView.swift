@@ -14,5 +14,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    LandmarkList()
+    ContentView().environment(ModelData())
 }
